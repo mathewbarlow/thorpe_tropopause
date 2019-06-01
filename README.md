@@ -18,6 +18,10 @@ Given the similarity between the results and the original figures when I double 
 
 <img src="figures/comparison_thorpe_1985_fig_5.png" width="500" height="500">
 
+<b> Acknowledgements </b>
+
+Support from NSF AGS-1623912 and NSF AGS-1657921 is gratefully acknowledged.
+
 <b> References </b>
 
 Hoskins, B.J., McIntyre, M.E. and Robertson, A.W., 1985. On the use and significance of isentropic potential vorticity maps. Quart. J. Roy. Meteor. Soc., 111(470), pp.877-946.

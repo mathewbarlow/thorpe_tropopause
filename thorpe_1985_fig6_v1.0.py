@@ -419,7 +419,7 @@ while i < clevs_lab.size:
     i = i + 1
 
 # figure out positions for contour labels for v
-vlevs = np.array([8, 12, 16, 20, 24, 28, 32])
+vlevs = np.array([0, 4, 8, 12, 16, 20, 24, 28, 32])
 vlevs_lab = np.array([16, 24, 32])
 
 vlevs_lab_pos = np.zeros((vlevs_lab.size, 2))

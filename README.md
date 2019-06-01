@@ -10,7 +10,7 @@ Comparisons between the output of the programs and the original figures are prov
 
 <b> Summary of Results </b>
 
-The code appears to work fine for Figs. 1, 2, 4, 5, and 6 from Thorpe (1985).  For example, here is a comparison for Fig. 5, which shows a close match. (Note that there appears to be a typo in the paper, it looks like the sin should be squared as well in the specification of the potential vorticity.)
+The code appears to work fine for Figs. 1, 2, 4, 5, and 6 from Thorpe (1985).  For example, here is a comparison for Fig. 5, which shows a close match. (Note that there appears to be a typo in the paper, it looks like the sine should be squared in the specification of the potential vorticity, which is what done here.)
 
 <img src="figures/comparison_thorpe_1985_fig_5.png" width="500" height="500">
 

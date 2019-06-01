@@ -18,7 +18,7 @@ The code appears to work fine for Figs. 1, 2, 4, 5, and 6 from Thorpe (1985).  F
 
 For simplicity, potential vorticity and potential temperature are linearly interpolated when determining the tropopause.  I have tried more sophisticated approaches but they didn't seem to make much difference and tended to cause convergence problems in some cases, so I did not include them here.  I also did some sensitivity tests with much higher resolution, and without any interpolation for potential vorticity (every grid box either has the tropospheric or stratospheric value with no intermediate values), and the way the tropopause is treated in the code does not appear to explain the differences from the original figures.  
 
-Given the similarity between the results and the original figures when I double the radial scale of the given conditions, I've either misunderstood something about the basic parameters, how to implement them, or have a bug somewhere. I've traded various permuations of different values but can't figure out the problem.
+Given the similarity between the results and the original figures for Thorpe (1986) and Fig. 15a from Hoskins et al. (1985) when I double the radial scale of the given conditions, I've either misunderstood something about the basic parameters, how to implement them, or have a bug somewhere. I've traded various permuations of different values but can't figure out the problem.
 
 <b> Acknowledgements </b>
 

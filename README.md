@@ -4,7 +4,7 @@
 
 This repository contains preliminary python code to replicate the results of Thorpe (1985), Thorpe (1986), and Fig. 15a from Hoskins et al. (1985), which show the circulation for various axisymmetric distributions of potential vorticity and boundary variations in potential temperature.  There is a separate program for each figure considered, although the only changes are in the given conditions and parameter values.
 
-Appears to work for all the figures from Thorpe (1985) EXCEPT Fig. 3, the sloping tropopause case, although the results in that case are very similar if the program is halted before convergence (as determined in terms of potential vorticity). Does not work yet for the figures from the other papers, although very similar results can be obtained by doubling the radial scale of the given conditions and halting before convergence.
+The code appears to work for all the figures from Thorpe (1985) EXCEPT Fig. 3, the sloping tropopause case, although the results in that case are very similar if the program is halted before convergence (as determined in terms of potential vorticity). It does not work yet for the figures from the other papers, although very similar results can be obtained by doubling the radial scale of the given conditions and halting before convergence.
 
 Comparisons between the output of the programs and the original figures are provided in the "figures" folder of this repository.
 
@@ -14,7 +14,7 @@ The code appears to work fine for Figs. 1, 2, 4, 5, and 6 from Thorpe (1985).  F
 
 <img src="figures/comparison_thorpe_1985_fig_5.png" width="500" height="500">
 
-However, Fig. 3 is a problem.  The fields look fairly similar if the program is stopped before reaching convergence (shown below) but only if using different contour intervals for some of them.  At convergence, the tropopause has continued to lower a bit and the winds are stronger.  I don't know what to make of the geopotential shown in the paper - it's possible to analytically solve for at the lateral boundary and it doesn't appear to be consistent with the paramaters given in the paper.  It does appear to be consistent with keeping H as 10km but when I run the code that way, it still doesn't match and has a vertical limit of Z = 1.67, which is not what's shown in the paper.
+However, Fig. 3 is a problem.  The fields look fairly similar if the program is stopped before reaching convergence (shown below) but only if also using different contour intervals for some of the fields.  At convergence, the tropopause has continued to lower a bit and the winds are stronger.  I don't know what to make of the geopotential shown in the figure - it's possible to analytically solve for at the lateral boundary and my analytical solution, which is the same as my numerical solution, doesn't appear to be consistent with the paramaters given in the paper.  It does appear to be consistent with keeping H as 10km but when I run the code that way, the results still doesn't match and I have to use a vertical limit of Z = 1.67, which is not what's shown in the original figure.
 
 <img src="figures/comparison_thorpe_1985_fig_3_closest.png" width="500" height="500">
 

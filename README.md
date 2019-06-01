@@ -2,7 +2,7 @@
 
 <b> Overview </b>
 
-This repository contains preliminary python code to replicate the results of Thorpe (1985), Thorpe (1986), and Fig. 15a from Hoskins et al. (1985), which show the circulation for various axisymmetric distributions of potential vorticity and boundary variations in potential temperature.  There is a separate program for each figure considered, although the only changes are in parameter values.
+This repository contains preliminary python code to replicate the results of Thorpe (1985), Thorpe (1986), and Fig. 15a from Hoskins et al. (1985), which show the circulation for various axisymmetric distributions of potential vorticity and boundary variations in potential temperature.  There is a separate program for each figure considered, although the only changes are in the given conditions and parameter values.
 
 Appears to work for all the figures from Thorpe (1985) EXCEPT Fig. 3, the sloping tropopause case, although the results are very similar if the program is halted before convergence (as determined in terms of potential vorticity). Does not work yet for the figures from the other papers, although very similar results can be obtained by doubling the radial scale of the given conditions and halting before convergence.
 

@@ -3,6 +3,8 @@ This repository contains preliminary python code to replicate the results of Tho
 
 Appears to work for all the figures from Thorpe (1985) EXCEPT Fig. 3, the sloping tropopause case. Does not work yet for the figures from the other papers, although very similar results can be obtained by doubling the radial scale of the given conditions and halting before convergence (as determined in terms of potential vorticity).
 
+Comparisons between the output of the programs and the original figures are provided in the "figures" folder of this repository.
+
 References
 Hoskins, B.J., McIntyre, M.E. and Robertson, A.W., 1985. On the use and significance of isentropic potential vorticity maps. Quart. J. Roy. Meteor. Soc., 111(470), pp.877-946.
 

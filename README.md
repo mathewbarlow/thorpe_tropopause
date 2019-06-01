@@ -14,7 +14,11 @@ The code appears to work fine for Figs. 1, 2, 4, 5, and 6 from Thorpe (1985).  F
 
 <img src="figures/comparison_thorpe_1985_fig_5.png" width="500" height="500">
 
-<b> Discussion </b>
+However, Fig. 3 is a problem.  The fields look fairly similar if the program is stopped before reaching convergence (shown below) but only if using different contour intervals for some of them.  At convergence, the tropopause has continued to lower a bit and the winds are stronger.  I don't know what to make of the geopotential shown in the paper - it's possible to analytically solve for at the lateral boundary and it doesn't appear to be consistent with the paramaters given in the paper.  It does appear to be consistent with keeping H as 10km but when I run the code that way, it still doesn't match and has a vertical limit of Z = 1.67, which is not what's shown in the paper.
+
+<img src="figures/comparison_thorpe_1985_fig_3_closest.png" width="500" height="500">
+
+<b> Further Discussion </b>
 
 For simplicity, potential vorticity and potential temperature are linearly interpolated when determining the tropopause.  I have tried more sophisticated approaches but they didn't seem to make much difference and tended to cause convergence problems in some cases, so I did not include them here.  I also did some sensitivity tests with much higher resolution, and without any interpolation for potential vorticity (every grid box either has the tropospheric or stratospheric value with no intermediate values), and the way the tropopause is treated in the code does not appear to explain the differences from the original figures.  
 

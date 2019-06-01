@@ -14,6 +14,10 @@ For simplicity, potential vorticity and potential temperature are linearly inter
 
 Given the similarity between the results and the original figures when I double the radial scale of the given conditions, I've either misunderstood something about the basic parameters, how to implement them, or have a bug somewhere. I've traded various permuations of different values but can't figure out the problem.
 
+<b> Summary of Results </b>
+
+<img src="figures/comparison_thorpe_1985_fig_5.png" width="500" height="500">
+
 <b> References </b>
 
 Hoskins, B.J., McIntyre, M.E. and Robertson, A.W., 1985. On the use and significance of isentropic potential vorticity maps. Quart. J. Roy. Meteor. Soc., 111(470), pp.877-946.

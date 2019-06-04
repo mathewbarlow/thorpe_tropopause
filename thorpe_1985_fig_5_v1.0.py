@@ -6,7 +6,7 @@
 # Thorpe, A., 1985: Diagnosis of balanced vortex structure using potential
 # vorticity.  J. Atmos. Sci., 42, 397-406.
 
-# The version is set for Fig. 4 in T85.  The results only match the figure
+# The version is set for Fig. 5 in T85.  The results only match the figure
 # if the sine in eq. 24 is squared and that change is used here.
 
 # The results appear to match very closely with those shown in T85.

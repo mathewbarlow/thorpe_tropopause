@@ -9,7 +9,7 @@
 # The version is set for Fig. 1 in T86.
 # Resolution as given in T85.
 
-# NOTE:  This version is not able to exactly reproduce the results from T85 -
+# NOTE:  This version is also not able to exactly reproduce the results from T85 -
 # the solution comes close but then moves on while converging.
 
 # Results are very sensitive to all the different parameters and choices for

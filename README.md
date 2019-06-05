@@ -30,6 +30,8 @@ Support from NSF AGS-1623912 and NSF AGS-1657921 is gratefully acknowledged.
 
 <b> References </b>
 
-Hoskins, B.J., McIntyre, M.E. and Robertson, A.W., 1985. On the use and significance of isentropic potential vorticity maps. Quart. J. Roy. Meteor. Soc., 111(470), pp.877-946.
+Hoskins, B.J., McIntyre, M.E. and Robertson, A.W., 1985. On the use and significance of isentropic potential vorticity maps. Quart. J. Roy. Meteor. Soc., 111, 877-946.
 
-Thorpe, A., 1985: Diagnosis of balanced vortex structure using potential vorticity.  J. Atmos. Sci., 42, 397-406.
+Thorpe, A.J., 1985: Diagnosis of balanced vortex structure using potential vorticity.  J. Atmos. Sci., 42, 397-406.
+
+Thorpe, A.J., 1986: Synoptic Scale Disturbances with Circular Symmetry. Mon. Wea. Rev., 114, 1384–1389.

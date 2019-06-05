@@ -26,7 +26,7 @@ and here is the comparison when I double the radial scale and halt a bit before 
 
 <img src="figures/comparison_thorpe_1986_fig_4_closest.png" width="400" height="250">
 
-The litte dip in the vorticity contour at the origin is due to halting before convergence and is not a fundamental part of the solution.
+(The litte dip in the vorticity contour at the origin is due to halting before convergence and is not a fundamental part of the solution.  The other small differences between the figures are within the range of differences due to being not fully converged, potential resolution differences, and the basic linear interpolation used in the tropopause calculations.)
 
 <b> Further Discussion </b>
 

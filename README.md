@@ -12,26 +12,30 @@ Comparisons between the output of the programs and the original figures are prov
 
 The code appears to work fine for Figs. 1, 2, 4, 5, and 6 from Thorpe (1985).  For example, here is a comparison for Fig. 5, which shows a close match. (Note that there appears to be a typo in the paper, it looks like the sine should be squared in the specification of the potential vorticity, which is what done here.)
 
-<img src="figures/comparison_thorpe_1985_fig_5.png" width="400" height="400">
+<img src="figures/comparison_thorpe_1985_fig_5.png" width="350" height="350">
 
 However, Fig. 3 is a problem.  The fields look fairly similar if the program is stopped before reaching convergence (shown below) but only if also using different contour intervals for some of the fields.  At convergence, the tropopause has continued to lower a bit and the winds are stronger.  I don't know what to make of the geopotential shown in the figure - it's possible to analytically solve for at the lateral boundary and my analytical solution, which is the same as my numerical solution, doesn't appear to be consistent with the paramaters given in the paper.  It does appear to be consistent with keeping H as 10km but when I run the code that way, the results still doesn't match and I have to use a vertical limit of Z = 1.67, which is not what's shown in the original figure.
 
 <img src="figures/comparison_thorpe_1985_fig_3_closest.png" width="400" height="400">
 
-The issues continue with trying to reproduce the figures in Thorpe (1986) and Fig. 15a from Hoskins et al. (1985), although there is a clue.  I can obtain similar solutions if I double the radial scale (that is, doubling R0 in the specification of the tropopause slope and the domain shown).  This is true for the figures with only lower boundary conditions as well, so my problem seems to be in the overall setup of the code for the cases with a stratosphere, not something specific to the tropopause calculation.  For example, here is the comparison for Fig. 4 from Thorpe (1986) - warm core lower boundary condition - with my best guess as to how to set up the code:
+The issues continue with trying to reproduce the figures in Thorpe (1986) and Fig. 15a from Hoskins et al. (1985), although there is a clue: I can obtain similar solutions if I double the radial scale (that is, doubling R0 in the specification of the tropopause slope and in the domain shown).  This is true for the figures with only lower boundary conditions as well, so my problem seems to be in the overall setup of the code for the cases with a stratosphere, not something specific to the tropopause calculation.  For example, here is the comparison for Fig. 4 from Thorpe (1986) - warm core lower boundary condition - with my best guess as to how to set up the code:
 
-<img src="figures/comparison_thorpe_1986_fig_4.png" width="350" height="250">
+<img src="figures/comparison_thorpe_1986_fig_4.png" width="400" height="250">
 
-and here is the comparison when I double the radial scale and halt before convergence when the results look the most similar:
+and here is the comparison when I double the radial scale and halt a bit before convergence when the results look the most similar:
 
-<img src="figures/comparison_thorpe_1986_fig_4_closest.png" width="350" height="250">
+<img src="figures/comparison_thorpe_1986_fig_4_closest.png" width="400" height="250">
 
 
 <b> Further Discussion </b>
 
-For simplicity, potential vorticity and potential temperature are linearly interpolated when determining the tropopause.  I have tried more sophisticated approaches but they didn't seem to make much difference and tended to cause convergence problems in some cases, so I did not include them here.  I also did some sensitivity tests with much higher resolution, and without any interpolation for potential vorticity (every grid box either has the tropospheric or stratospheric value with no intermediate values), and the way the tropopause is treated in the code does not appear to explain the differences from the original figures.  
+For simplicity, potential vorticity and potential temperature are linearly interpolated when determining the tropopause.  I have tried more sophisticated approaches but they didn't seem to make much difference and tended to cause convergence problems in some cases, so I did not include them here.  I also did some sensitivity tests with much higher resolution, and without any interpolation for potential vorticity (every grid box either has the tropospheric or stratospheric value with no intermediate values), and the way the tropopause is treated in the code does not appear to explain the differences from the original figures.
+
+For my assessment of convergence, I examine how closely the specified potential vorticity compares to the potential vorticity calculated from the potential function.
 
 Given the similarity between the results and the original figures for Thorpe (1986) and Fig. 15a from Hoskins et al. (1985) when I double the radial scale of the given conditions, I've either misunderstood something about the basic parameters, how to implement them, or have a bug somewhere. I've traded various permuations of different values but can't figure out the problem.
+
+This has been driving me a bit crazy, so if anyone can figure out what the problem is, I'd be extremely grateful!
 
 <b> Acknowledgements </b>
 
